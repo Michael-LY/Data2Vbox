@@ -29,7 +29,7 @@ def read_xlsx(filename):
     #载⼊⽂件
     wb = openpyxl.load_workbook(filename)
     #获取Sheet1⼯作表
-    ws = wb.get_sheet_by_name('Sheet1')
+    ws = wb.get_sheet_by_name('Sheet')
     #按⾏读取
     for row in ws.rows:
         for cell in row:
